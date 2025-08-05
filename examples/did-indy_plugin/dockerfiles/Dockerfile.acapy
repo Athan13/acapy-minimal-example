@@ -1,0 +1,3 @@
+FROM ghcr.io/openwallet-foundation/acapy-agent:py3.12-1.3.0 AS release
+
+RUN pip install 'git+https://github.com/indicio-tech/acapy-did-indy.git@5bcade64b696f720f18825f81319588edee54b12#egg=acapy_did_indy'
